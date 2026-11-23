@@ -1,0 +1,25 @@
+.arrows {
+  display: flex;
+  gap: 6px;
+}
+
+.arrows button {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  color: var(--dark);
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.arrows button:hover:not(:disabled) {
+  color: #fff;
+  background: var(--orange);
+}
+
+.arrows button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}

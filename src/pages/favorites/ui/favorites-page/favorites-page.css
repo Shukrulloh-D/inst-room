@@ -1,0 +1,17 @@
+.favorites-count {
+  margin: -12px 0 14px;
+  font-size: 11px;
+  color: var(--gray);
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .favorites-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

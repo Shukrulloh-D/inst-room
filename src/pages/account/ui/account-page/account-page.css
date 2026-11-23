@@ -1,0 +1,81 @@
+.empty-state-like {
+  padding-top: 48px;
+  padding-bottom: 72px;
+}
+
+.account-page-text {
+  max-width: 420px;
+  margin-bottom: 20px;
+  color: var(--gray);
+}
+
+.account-page {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.account-page-side {
+  display: grid;
+  gap: 12px;
+}
+
+.account-page-menu {
+  color: #fff;
+  background: var(--dark);
+}
+
+.account-page-tab {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid #333838;
+}
+
+.account-page-tab:hover {
+  color: var(--orange);
+}
+
+.account-page-tab-active {
+  color: var(--orange);
+}
+
+.account-page-banner {
+  position: relative;
+  display: block;
+  min-height: 100px;
+  overflow: hidden;
+  color: #fff;
+  background: #444;
+}
+
+.account-page-banner img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.account-page-banner span {
+  position: relative;
+  display: block;
+  padding: 12px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.account-page-content {
+  padding: 20px;
+  background: #fff;
+}
+
+@media (max-width: 800px) {
+  .account-page {
+    grid-template-columns: 1fr;
+  }
+}

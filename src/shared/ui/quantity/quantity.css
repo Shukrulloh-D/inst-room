@@ -1,0 +1,29 @@
+.quantity {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  border: 1px solid var(--line);
+}
+
+.quantity button {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 100%;
+}
+
+.quantity button:hover:not(:disabled) {
+  color: var(--orange);
+}
+
+.quantity button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.quantity span {
+  min-width: 26px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}

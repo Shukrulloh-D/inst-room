@@ -1,0 +1,104 @@
+.compare {
+  padding-bottom: 48px;
+  color: #fff;
+  background: var(--dark);
+}
+
+.compare .breadcrumbs {
+  color: var(--gray);
+}
+
+.compare .breadcrumbs-last {
+  color: #fff;
+}
+
+.compare-tools {
+  display: flex;
+  gap: 24px;
+  margin: -8px 0 16px;
+  font-size: 10px;
+}
+
+.compare-tools button {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+.compare-wrap {
+  overflow-x: auto;
+}
+
+.compare-table {
+  width: 100%;
+  min-width: 640px;
+  font-size: 10px;
+  border-collapse: collapse;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--dark-2);
+}
+
+.compare-table tbody th {
+  width: 160px;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.compare-product {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  color: #fff;
+  background: var(--dark-2);
+}
+
+.compare-product img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.compare-product a {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.compare-product a:hover {
+  color: var(--orange);
+}
+
+.compare-product-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.compare-product-bottom button {
+  color: var(--orange);
+}
+
+.compare-remove {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  color: var(--gray);
+}
+
+.compare-remove:hover {
+  color: #fff;
+}
+
+.compare-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+}

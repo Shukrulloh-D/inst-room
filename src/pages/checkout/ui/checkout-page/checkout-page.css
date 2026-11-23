@@ -1,0 +1,79 @@
+.checkout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 16px;
+  align-items: start;
+}
+
+.checkout-main {
+  background: #fff;
+}
+
+.checkout-steps {
+  display: flex;
+  gap: 28px;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.checkout-step button {
+  padding: 14px 0;
+  font-size: 11px;
+  color: var(--gray);
+  border-bottom: 2px solid transparent;
+}
+
+.checkout-step button:disabled {
+  cursor: default;
+}
+
+.checkout-step-done button {
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.checkout-step-active button {
+  font-weight: 700;
+  color: var(--dark);
+  border-color: var(--orange);
+}
+
+.checkout-body {
+  padding: 24px;
+}
+
+.checkout-actions {
+  margin-top: 24px;
+}
+
+.checkout-summary {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  font-size: 11px;
+  color: #fff;
+  background: var(--dark);
+}
+
+.checkout-summary h2 {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.checkout-summary-total {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.checkout-summary p:not(.checkout-summary-total) {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .checkout {
+    grid-template-columns: 1fr;
+  }
+}

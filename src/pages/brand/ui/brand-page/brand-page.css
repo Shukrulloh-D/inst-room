@@ -1,0 +1,31 @@
+.brand-page-about {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.brand-page-about img {
+  width: 130px;
+  height: 60px;
+  padding: 6px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.brand-page-about p {
+  max-width: 640px;
+  font-size: 11px;
+  color: var(--dark-2);
+}
+
+.brand-page-title {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 600px) {
+  .brand-page-about {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,35 @@
+.hits-tabs {
+  padding-bottom: 32px;
+  color: #fff;
+  background: var(--dark);
+}
+
+.hits-tabs-list {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+  background: #000;
+  margin-inline: -20px;
+  padding: 0 20px;
+}
+
+.hits-tab {
+  padding: 14px 18px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.hits-tab:hover {
+  color: #fff;
+}
+
+.hits-tab-active {
+  color: #fff;
+  border-bottom: 2px solid var(--orange);
+}
+
+.hits-tabs-all {
+  font-size: 10px;
+  color: var(--orange);
+}

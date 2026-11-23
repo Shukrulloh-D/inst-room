@@ -1,0 +1,74 @@
+.catalog-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #fff;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.catalog-tab {
+  padding: 12px;
+  font-size: 11px;
+  text-align: center;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.catalog-tab:hover {
+  color: var(--orange);
+}
+
+.catalog-tab-active {
+  color: #fff;
+  background: var(--orange);
+}
+
+.catalog-tab-active:hover {
+  color: #fff;
+}
+
+.catalog-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 24px 40px;
+  margin-top: 12px;
+  background: #fff;
+}
+
+.catalog-tile {
+  display: block;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.catalog-tile img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.catalog-tile span {
+  display: block;
+  padding: 8px;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  background: var(--dark);
+  transition: background-color 0.2s;
+}
+
+.catalog-tile:hover span {
+  background: var(--orange);
+}
+
+@media (max-width: 700px) {
+  .catalog-tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog-tiles {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+  }
+}

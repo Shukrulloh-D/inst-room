@@ -1,0 +1,13 @@
+.category-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media (max-width: 800px) {
+  .category-blocks {
+    grid-template-columns: 1fr;
+  }
+}

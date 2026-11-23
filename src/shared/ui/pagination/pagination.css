@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0 4px;
+}
+
+.pagination-item {
+  min-width: 22px;
+  height: 22px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.pagination-item:hover {
+  color: var(--orange);
+}
+
+.pagination-active {
+  color: #fff;
+  background: var(--orange);
+}
+
+.pagination-active:hover {
+  color: #fff;
+}
+
+.pagination-arrow {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  color: var(--gray);
+}
+
+.pagination-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}

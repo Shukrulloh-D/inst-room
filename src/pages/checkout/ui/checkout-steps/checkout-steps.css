@@ -1,0 +1,35 @@
+.checkout-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 28px;
+}
+
+.checkout-fields .checkout-note {
+  grid-column: 1 / -1;
+}
+
+.checkout-delivery {
+  display: grid;
+  gap: 20px;
+}
+
+.checkout-methods {
+  display: flex;
+  gap: 28px;
+}
+
+.checkout-methods-column {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkout-note {
+  font-size: 10px;
+  color: var(--gray);
+}
+
+@media (max-width: 600px) {
+  .checkout-fields {
+    grid-template-columns: 1fr;
+  }
+}

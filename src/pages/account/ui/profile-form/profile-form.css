@@ -1,0 +1,27 @@
+.profile-form {
+  display: grid;
+  gap: 18px;
+}
+
+.profile-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 28px;
+}
+
+.profile-form-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.profile-form-saved {
+  font-size: 11px;
+  color: var(--green);
+}
+
+@media (max-width: 600px) {
+  .profile-form-grid {
+    grid-template-columns: 1fr;
+  }
+}

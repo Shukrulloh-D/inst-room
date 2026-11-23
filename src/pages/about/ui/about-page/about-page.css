@@ -1,0 +1,41 @@
+.about-page-text {
+  display: grid;
+  gap: 14px;
+  max-width: 760px;
+  margin-bottom: 24px;
+  font-size: 12px;
+}
+
+.about-page-text li {
+  margin-bottom: 6px;
+  list-style: decimal inside;
+}
+
+.about-page-wide {
+  width: 100%;
+  max-height: 280px;
+  margin-bottom: 24px;
+  object-fit: cover;
+  background: #ddd;
+}
+
+.about-page-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.about-page-two img {
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  background: #ddd;
+}
+
+@media (max-width: 700px) {
+  .about-page-two {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,20 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 18px 0 14px;
+  font-size: 10px;
+  color: var(--gray);
+}
+
+.breadcrumbs-item + .breadcrumbs-item::before {
+  content: '/';
+  margin: 0 8px;
+}
+
+.breadcrumbs a:hover {
+  color: var(--orange);
+}
+
+.breadcrumbs-last {
+  color: var(--dark);
+}
